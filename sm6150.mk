@@ -90,7 +90,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32 \
     audio.a2dp.default \
-		audio.primary.sm6150:32 \
+    audio.primary.sm6150:32 \
     audio.r_submix.default \
     audio.usb.default \
     liba2dpoffload \
@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libqcomvoiceprocessingdescriptors \
     libsndmonitor \
     libspkrprot \
     libtinycompress \
