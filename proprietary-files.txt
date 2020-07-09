@@ -9,17 +9,17 @@ vendor/lib/libacdb-fts.so|b549ea744dcc0b81b44215d449a01efdcee277d3
 vendor/lib/libacdbloader.so|c75c65fc580d94241e08f5127e98719547f22c63
 vendor/lib/libacdbrtac.so|8d0b3d98fd4f0d47496bb12aaca8f46ceb6016ae
 
-# ADSP - from LA.UM.8.9.r1-04400-SM6xx.0
-vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|13d8a911642844bde32d533948a35730e17d41ad
-vendor/lib/libadsp_default_listener.so|7da1a1cfef2f04e3577d0e1cda81ce12204598fa
-vendor/lib/libadsprpc.so|28a1d664aba2bda20e62d04c09c117eea136d3c7
-vendor/lib/libmdsprpc.so|07e492c35dc205391d8d7e2d4684801ed870d329
-vendor/lib/libsdsprpc.so|f4d860f07a9e44a04eb9578771f079528c770109
-vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
-vendor/lib64/libadsprpc.so|aea62273ca4355ceb76dfeec2cd11d39614a854e
-vendor/lib64/libmdsprpc.so|df135d5ca3e0ac4ccc670a4133f781d77315f089
-vendor/lib64/libsdsprpc.so|65f23710d4895b738c9eb827b513b1d9d9480aad
+# ADSP
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/dirac_resource.dar
@@ -213,54 +213,86 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM - from LA.UM.8.9.r1-07100-SM6xx.0
-vendor/bin/qseecomd|70b84d6f6a5c59826ad75c80648a1a25eff1cbc1
-vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
-vendor/etc/init/qseecomd.rc|3e596c60490756388a5bd56378a91d0db7c3779b
-vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
-vendor/lib64/libGPreqcancel_svc.so|5a898d2f54dd1c0c072829c18bc07fe5aec38119
-vendor/lib64/libQSEEComAPI.so|dbe1635bab106734ebc0f0839c74b220d2c4e630
-vendor/lib64/libSecureUILib.so|1dc72d41cfee5a908710989880e9ebdbf3919ee3
-vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
-vendor/lib64/libdrmfs.so|d4d19dcd0aab6d62a2069d5807a0c33dea704af1
-vendor/lib64/libdrmtime.so|4e217cd2c0b6386eafa51e730baf8831f58ea4b8
-vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
-vendor/lib64/librpmb.so|d0fd210fa30dd02be655c6ab2ee9db34d84cf12e
-vendor/lib64/libsecureui.so|f9f81bfaee498bc28ddcba2480cdf4b9a5af59e6
-vendor/lib64/libsecureui_svcsock.so|316b2f2225c8711b2cdfde43b889a91a7946f3de
-vendor/lib64/libsi.so|0799636c3004948d7c12741e0338aa42fc615899
-vendor/lib64/libssd.so|3b161674d4e83ceef28260686b498e2a5dbb0327
-vendor/lib/libQSEEComAPI.so|b30e8077449164cb5c6246041dcc2fda96f498d0
-vendor/lib/libcpion.so|63b8c485d90b1e38ea3426b172cb93f869c7480e
-vendor/lib/libdrmfs.so|cb73770f243a4ad32b2f9dac29bc138f977ed2a7
+# DRM
+vendor/bin/qseecomd
+vendor/etc/gpfspath_oem_config.xml
+vendor/etc/init/qseecomd.rc
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libcpion.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsi.so
+vendor/lib64/libssd.so
+vendor/lib/libGPreqcancel.so
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/libSecureUILib.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libcpion.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libqisl.so
+vendor/lib/librpmb.so
+vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libsi.so
+vendor/lib/libssd.so
 
 # DRM - Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/librmp.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/liboemcrypto.so
+vendor/lib64/liboemcrypto.so|2cee717b25559030a61709e826b4a5dae6043c20
 vendor/lib64/librmp.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib/libbase64.so
 vendor/lib/libcppf.so
-vendor/lib/liboemcrypto.so
+vendor/lib/liboemcrypto.so|b349d1d049709bbdff15a133698264dc8c01db14
 vendor/lib/librmp.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Firmware
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a540_gpmu.fw2
+vendor/firmware/a612_rgmu.bin
+vendor/firmware/a612_zap.b00
+vendor/firmware/a612_zap.b01
+vendor/firmware/a612_zap.b02
+vendor/firmware/a612_zap.elf
+vendor/firmware/a612_zap.mdt
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
 vendor/firmware/a615_zap.b02
 vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
+vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
@@ -411,7 +443,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.8.9.r1-04400-SM6xx.0
@@ -513,7 +544,7 @@ vendor/bin/hw/vendor.display.color@1.0-service|8646c74c5b19e6d5086d7a4f83e075761
 # Qualcomm removed android.hidl.base@1.0 dependency on this one
 
 # Power-off charging daemon - from 
--sbin/charger:bin/chargeonlymode|5665db380f55cad069f64d4ebd84e4dc41766f2a
+-bin/charger:bin/chargeonlymode|5665db380f55cad069f64d4ebd84e4dc41766f2a
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
@@ -524,6 +555,7 @@ vendor/lib64/libdiag.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
 vendor/lib64/libminkdescriptor.so
+vendor/lib64/libqcbor.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
@@ -539,6 +571,7 @@ vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libminkdescriptor.so
+vendor/lib/libqcbor.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
@@ -782,7 +815,7 @@ vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
