@@ -350,6 +350,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
+# Shim for camera
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
