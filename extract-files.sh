@@ -98,7 +98,6 @@ function fix_product_path () {
         "$COMMON_BLOB_ROOT"/"$1"
 }
 
-fix_product_path product/etc/permissions/vendor.qti.hardware.factory.xml
 fix_product_path product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 
 #
